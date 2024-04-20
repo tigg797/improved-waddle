@@ -1,5 +1,6 @@
 var user_name = localStorage.getItem("user_name");
-document.getElementById("wlcm-h1").innerHTML="Welcome to SocToc, "+user_name+"!";
+console.log(localStorage.getItem("user_name"));
+document.getElementById("wlcm-h1").innerHTML = '<h1 id="wlcm-h1">Welcome to SocToc, '+user_name+'!</h1>';
 
 function logout() {
     window.location="index.html"
